@@ -10,7 +10,7 @@ import { RiDiscountPercentLine } from "react-icons/ri";
 
 const Banner = () => {
   return (
-    <div className='min-h-[550px] flex justify-center items-center py-12 sm:py-0'>
+    <div className='min-h-[550px] flex justify-center items-center py-12 sm:py-0 px-6 sm:px-12 md:px-16 lg:px-24'>
         <div className='container'>
             <div className='grid items-center grid-cols-1 gap-6 md:grid-cols-2'>
                 <div data-aos='zoom-in'>
