@@ -2,6 +2,7 @@ import React from "react";
 import Image1 from "../../assets/hero/women.png";
 import Image2 from "../../assets/hero/shopping.png";
 import Image3 from "../../assets/hero/sale.png";
+import Image4 from "../../assets/women/topDress.png";
 import Slider from "react-slick";
 
 const ImageList = [
@@ -26,6 +27,13 @@ const ImageList = [
     description:
       "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
+  // {
+  //   id: 3,
+  //   img: Image4,
+  //   title: "70% off on all Products Sale",
+  //   description:
+  //     "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  // },
 ];
 
 const Hero = ({ handleOrderPopup }) => {

@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
 import Footer from './components/Footer/Footer';
+import Testimonial from './components/Testimonias/Testimonial';
 function App() {
   const [orderPopup, setorderPopup] = useState(false);
 
@@ -31,6 +32,7 @@ function App() {
       <Hero handelOrderPopup={handelOrderPopup} />
       <Banner />
       <Products />
+      <Testimonial />
       <Footer />
     </div>
       

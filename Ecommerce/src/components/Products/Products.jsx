@@ -5,6 +5,7 @@ import Img1 from "../../assets/women/women.png";
 import Img2 from "../../assets/women/women2.jpg";
 import Img3 from "../../assets/women/women3.jpg";
 import Img4 from "../../assets/women/women4.jpg";
+import AriaSkirted from "../../assets/women/topDress.webp";
 import { FaStar } from "react-icons/fa6";
 
 const ProductsData = [
@@ -17,6 +18,7 @@ const ProductsData = [
   { id: 7, img: Img2, title: "Women Western", rating: 4.5, color: "Red", description: "Trendy western wear to elevate your style.", delay: 1200 },
   { id: 8, img: Img3, title: "Goggles", rating: 4.7, color: "Brown", description: "Stylish goggles to complete your look.", delay: 1400 },
   { id: 9, img: Img4, title: "Printed T-Shirt", rating: 4.4, color: "Yellow", description: "Comfortable and trendy printed t-shirts.", delay: 1600 },
+  { id: 10, img: AriaSkirted, title: "Aria Skirted One Piece", rating: 4.5, color: "Island Paisley", description: "Casual and stylish fashion t-shirts.", delay: 1800 },
 ];
 
 const Products = () => {
@@ -41,7 +43,7 @@ const Products = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center sm:px-12 md:px-16 lg:px-24">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center lg:px-24">
           {ProductsData.map(({ id, img, title, rating, color, description, delay }) => (
             <div
               key={id}
@@ -49,7 +51,7 @@ const Products = () => {
               data-aos-delay={delay}
               className="relative flex flex-col items-center w-48 p-4 bg-white shadow-md cursor-pointer rounded-xl hover:shadow-lg h-80 group"
             >
-              <div className="relative w-32 h-32">
+              <div className="relative w-40 h-40 sm:w-40 sm:h-40">
                 <img src={img} alt={title} className="object-cover w-full h-full rounded-md" />
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity opacity-0 bg-black/10 bg-opacity-40 backdrop-blur-md group-hover:opacity-100">
                   <div className="flex items-center gap-1 text-lg text-yellow-400">

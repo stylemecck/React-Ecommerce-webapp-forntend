@@ -3,6 +3,7 @@ import { IoMdSearch } from 'react-icons/io';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { FiShoppingBag } from 'react-icons/fi';
 import { FaCaretDown } from 'react-icons/fa';
+import { HiMiniShoppingBag } from "react-icons/hi2";
 
 const Menu = [
   { id: 1, name: 'Home', link: '/#' },
@@ -27,8 +28,8 @@ const Navbar = ({ handelOrderPopup }) => {
       <div className="container flex items-center justify-between px-6 py-4 mx-auto">
         {/* Logo */}
         <a href="#" className="flex items-center text-2xl font-bold text-gray-800 dark:text-white">
-          <AiOutlineShoppingCart size={30} className="text-[#4263eb]" />
-          <span className="ml-2">ShopMecck</span>
+          <HiMiniShoppingBag size={30} className="text-[#4263eb]" />
+          <span className="ml-2">Luna Sparrow</span>
         </a>
 
         {/* Search Bar */}
